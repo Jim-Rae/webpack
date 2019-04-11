@@ -2,6 +2,11 @@
 
 > {{ description }}
 
+## 特别说明
+
++ 如果是pc端，需注释 *node_modules > lib-flexible > flexible.js* 文件的L71 ~ L73
+
+
 ## 项目结构(src文件夹)
 
 ``` bash
@@ -26,7 +31,7 @@ src
 |   |   |-- components          # 页面里的组件
 |   |   |-- index.vue           # 页面代码
 |-- plugins                     # 插件
-|   |-- indicator               # 指示器
+|   |-- message-box             # 弹框
 |   |   |-- index.js            # js代码
 |   |   |-- index.less          # 样式
 |   |-- install-all.js          # 用于全局安装所有的插件
@@ -34,13 +39,7 @@ src
 |-- router                      
 |   |-- index.js
 |-- store                       # vuex相关代码
-|   |-- actions.js              # 根级别的 action
-|   |-- getters.js              # 根级别的 getters
-|   |-- index.js                # 组装模块并导出 store 的地方 
-|   |-- modules                 # 模块
-|   |   |-- module-a.js         
-|   |-- mutations.js            # 根级别的 mutation
-|   |-- plugins.js              # vuex插件
+|   |-- index.js                
 |-- style                       
 |   |-- common.less             # 通用样式
 |   |-- index.less              # 导入当前文件夹里所有的样式

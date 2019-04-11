@@ -10,10 +10,15 @@ import api from './api'
 import registerAllComponents from './components/register-all'
 import installAllPlugins from './plugins/install-all'
 import installAllUtils from './utils/install-all'
-import 'mint-ui/lib/style.css'
 
+{{#if_eq type "m"}}
+import 'mint-ui/lib/style.css'
+{{/if_eq}}
+
+{{#if_eq type "m"}}
 import VConsole from 'vconsole/dist/vconsole.min.js' //import vconsole
 let vConsole = new VConsole() // 初始化
+{{/if_eq}}
 
 Vue.config.productionTip = false
 

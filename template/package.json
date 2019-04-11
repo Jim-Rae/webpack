@@ -26,8 +26,10 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    {{#if_eq type "m"}}
     "mint-ui": "^2.2.13",
     "vconsole": "^3.3.0",
+    {{/if_eq}}
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuex": "^3.1.0"

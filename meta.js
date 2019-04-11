@@ -159,6 +159,23 @@ module.exports = {
         },
       ],
     },
+    type: {
+      when: 'isNotTest',
+      type: 'list',
+      message: '请选择类型',
+      choices: [
+        {
+          name: '移动端',
+          value: 'm',
+          short: 'm',
+        },
+        {
+          name: 'PC端',
+          value: 'pc',
+          short: 'pc',
+        }
+      ]
+    },
     UIWidth: {
       when: 'isNotTest',
       type: 'string',
@@ -180,6 +197,15 @@ module.exports = {
     'test/unit/setup.js': "unit && runner === 'jest'",
     'test/e2e/**/*': 'e2e',
     // 'src/router/**/*': 'router',
+    'src/components/top-nav.vue': "type === 'm'",
+    'src/pages/demo/**/*': "type === 'm'",
+    'src/pages/message-box/**/*': "type === 'm'",
+    'src/plugins/picker/**/*': "type === 'm'",
+    'src/plugins/datepicker/**/*': "type === 'm'",
+    'src/plugins/distpicker/**/*': "type === 'm'",
+    'src/plugins/distpicker/**/*': "type === 'm'",
+    'src/plugins/indicator/**/*': "type === 'm'",
+    'src/plugins/toast/**/*': "type === 'm'",
   },
   complete: function(data, { chalk }) {
     const green = chalk.green

@@ -5,9 +5,12 @@ Vue.use(Router)
 
 // 动态import，实现路由懒加载
 const Home = () => import('@/pages/home')
-const Demo = () => import('@/pages/demo')
 const Axios = () => import('@/pages/axios')
+
+{{#if_eq type "m"}}
+const Demo = () => import('@/pages/demo')
 const MessageBox = () => import('@/pages/message-box')
+{{/if_eq}}
 
 // 全局路由导航
 const beforeEach = ((to, from, next) => {
@@ -34,19 +37,21 @@ export default new Router({
       component: Home
     },
     {
-      path: '/demo',
-      name: 'Demo',
-      component: Demo
-    },
-    {
       path: '/axios',
       name: 'Axios',
       component: Axios
+    },
+    {{#if_eq type "m"}}
+    {
+      path: '/demo',
+      name: 'Demo',
+      component: Demo
     },
     {
       path: '/message-box',
       name: 'MessageBox',
       component: MessageBox
     }
+    {{/if_eq}}
   ]
 })
