@@ -6,6 +6,6 @@ module.exports = {
     "postcss-url": {},
     // to edit target browsers: use "browserslist" field in package.json
     "autoprefixer": {},
-    "postcss-px2rem": {'remUnit': {{ UIWidth / 10 }}}
+    "postcss-px2rem": {'remUnit': {{computeDivide UIWidth 10 }} }
   }
 }

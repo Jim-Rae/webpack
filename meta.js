@@ -30,6 +30,9 @@ module.exports = {
     template_version() {
       return templateVersion
     },
+    computeDivide(v1, v2) {
+      return parseInt(v1 / v2)
+    },
   },
   
   prompts: {
