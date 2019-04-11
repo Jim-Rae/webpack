@@ -1,0 +1,26 @@
+.indicator{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: rgba(0,0,0,.7);
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.indicator-fade-enter-active {
+  transition: all .5s ease;
+}
+.indicator-fade-leave-active {
+
+  transition: all .5s ease;
+}
+.indicator-fade-enter, .indicator-fade-leave-to
+{
+  opacity: 0;
+}

@@ -1,0 +1,103 @@
+@themeColor: #26988f;  		// 主题色
+@subColor: #cde1df;			// 辅助色
+@bgColor: #eff1f1;			// 背景色
+@borderColor: #ebebeb;		// 描边色
+@oppositeColor: #e36e56;	// 对立色
+
+@primaryTextColor: #333;	// 主要文字
+@subTextColor: #666;		// 二级导航文字
+@minorTextColor: #999;		// 次要文字
+
+@themeActiveColor: #446B6D; 		 // 主题button触及颜色
+@themeHollowActiveColor: #E9F3F2; 	 // 主题中空button触及颜色
+@oppositeActiveColor: #CF6954; 	 	 // 对立button触及颜色
+@oppositeHollowActiveColor: #E36E56; // 对立中空button触及颜色
+@disableColor: #ddd;		 // 不可用button颜色
+
+// 背景图片地址和大小
+.bis(@url) { 
+	background-image: @url;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+//覆盖全屏
+.allcover-fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	.wh(100%, 100%);
+}
+
+//transform上下左右居中
+.xyt {  
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+//定位上下左右居中
+.xym(@width, @height) {  
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -@height/2;
+	margin-left: -@width/2;
+}
+
+//定位上下居中
+.yt {  
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+//定位左右居中
+.xt {  
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+//宽高
+.wh(@width, @height){
+	width: @width;
+	height: @height;
+}
+
+//字体大小、行高
+.fl(@size, @line-height) {  
+	font-size: @size;
+	line-height:@line-height;
+}
+
+//字体大小，颜色
+.sc(@size, @color){
+	font-size: @size;
+	color: @color;
+}
+
+//flex 布局和 子元素 对其方式
+.fja(@jtype: space-between, @atype: center){
+	display: flex;
+	justify-content: @jtype;
+	align-items: @atype;
+}
+
+//单行超出显示省略号
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+//多行超出显示省略号
+.ellipsis-for-lines(@lines) {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	/*! autoprefixer: off */
+	-webkit-box-orient: vertical;
+	/* autoprefixer: on */
+	-webkit-line-clamp: @lines;
+}

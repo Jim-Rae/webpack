@@ -1,0 +1,114 @@
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font-family: "Microsoft Yahei",sans-serif;
+  -webkit-tap-highlight-color:transparent;
+  -webkit-font-smoothing: antialiased;
+  &:focus {
+      outline: none;
+  }
+  box-sizing: border-box;
+}
+
+button {
+  background-color: transparent;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+::-webkit-scrollbar  
+{  
+  width: 0px;  
+  height: 0px;  
+  background-color: #F5F5F5;  
+}  
+
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+  -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);  
+  border-radius: 10px;  
+  background-color: #F5F5F5;  
+}  
+
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+  border-radius: 10px;  
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+  background-color: #555;  
+}  
+
+input {
+  -webkit-appearance: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button{
+  display: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #B6B5B5;
+}
+::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #B6B5B5;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #B6B5B5;
+}
+::-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #B6B5B5;
+}
+
+textarea { -webkit-appearance: none;}   
+
+html,body{
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  // -webkit-overflow-scrolling: touch;
+}
+
+.fillcontain{
+  height: 100%;
+  width: 100%;
+}
+.clear:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clear{
+  zoom:1;
+}
+
+.back_img{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.margin{
+  margin: 0 auto;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+

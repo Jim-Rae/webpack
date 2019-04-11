@@ -69,11 +69,11 @@ module.exports = {
         },
       ],
     },
-    router: {
-      when: 'isNotTest',
-      type: 'confirm',
-      message: 'Install vue-router?',
-    },
+    // router: {
+    //   when: 'isNotTest',
+    //   type: 'confirm',
+    //   message: 'Install vue-router?',
+    // },
     lint: {
       when: 'isNotTest',
       type: 'confirm',
@@ -156,6 +156,12 @@ module.exports = {
         },
       ],
     },
+    UIWidth: {
+      when: 'isNotTest',
+      type: 'string',
+      required: true,
+      message: 'UI图宽度',
+    },
   },
   filters: {
     '.eslintrc.js': 'lint',
@@ -169,7 +175,7 @@ module.exports = {
     'test/unit/specs/index.js': "unit && runner === 'karma'",
     'test/unit/setup.js': "unit && runner === 'jest'",
     'test/e2e/**/*': 'e2e',
-    'src/router/**/*': 'router',
+    // 'src/router/**/*': 'router',
   },
   complete: function(data, { chalk }) {
     const green = chalk.green
