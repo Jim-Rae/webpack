@@ -18,7 +18,7 @@
 
 <template>
   <div class="top-nav">
-    {{title}}
+    \{{title}}
     <div class="top-nav-left">
       <slot name="left">
         <div class="top-nav-left-wrapper" @click="clickBack">
