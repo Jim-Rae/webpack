@@ -162,7 +162,7 @@ module.exports = {
     type: {
       when: 'isNotTest',
       type: 'list',
-      message: '请选择类型',
+      message: '请选择模版类型',
       choices: [
         {
           name: '移动端',

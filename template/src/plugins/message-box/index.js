@@ -122,9 +122,6 @@ export default {
   }
 }
 {{/if_eq}}
-
-
-
 {{#if_eq type "pc"}}
 /*
  * @Author: Jim
@@ -172,13 +169,13 @@ const Msgbox = {
             v-if="title" 
             class="msgbox-title"
           >
-            {{title}}
+            \{{title}}
           </div>
           <div 
             v-if="message&&type!=='dialog'" 
             class="msgbox-message"
           >
-            {{message}}
+            \{{message}}
           </div>
           <textarea 
             v-if="type==='dialog'"

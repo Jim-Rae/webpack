@@ -71,8 +71,6 @@ export default {
 }
 </style>
 {{/if_eq}}
-
-
 {{#if_eq type "pc"}}
 <template>
   <div id="home">
