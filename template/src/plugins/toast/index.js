@@ -14,7 +14,7 @@ const Toast = {
   template: `
     <transition name="toast-fade">
       <div v-show="visible" class="toast">
-        {{message}}
+        \{{message}}
       </div>
     </transition>
   `,

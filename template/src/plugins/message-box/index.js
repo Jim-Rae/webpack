@@ -27,8 +27,8 @@ const Msgbox = {
       >
       <transition name="msgbox" @after-leave="visible=false">
         <div v-show="isShow" class="msgbox" @click="$event.stopPropagation()">
-          <div v-if="title" class="msgbox-title">{{title}}</div>
-          <div v-if="message" class="msgbox-message">{{message}}</div>
+          <div v-if="title" class="msgbox-title">\{{title}}</div>
+          <div v-if="message" class="msgbox-message">\{{message}}</div>
           <button 
             v-if="type==='alert'" 
             class="msgbox-alert-btn" 

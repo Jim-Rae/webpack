@@ -164,6 +164,7 @@ module.exports = {
       type: 'string',
       required: true,
       message: 'UI图宽度',
+      default: '750',
     },
   },
   filters: {

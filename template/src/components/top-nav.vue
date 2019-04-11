@@ -8,7 +8,7 @@
       // 添加导航栏右图标
       <template slot="right">
         <div class="home-nav-user" @click="clickInfo">
-          <div class="home-nav-user-name">{{userXm}}</div>
+          <div class="home-nav-user-name">\\{{userXm}}</div>
           <div class="home-nav-user-icon bg-user"></div>
         </div>
       </template>

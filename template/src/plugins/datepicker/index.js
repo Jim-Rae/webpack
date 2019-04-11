@@ -32,7 +32,7 @@ const MyPicker = {
         @touchmove.native="$event.preventDefault()"
       >
         <button class="cancel-btn" @click="close">取消</button>
-        <header class="picker-toolbar-title">{{title}}</header>
+        <header class="picker-toolbar-title">\{{title}}</header>
         <button class="confirm-btn" @click="confirm">确认</button>
       </picker>
     </popup>
