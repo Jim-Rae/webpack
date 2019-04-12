@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
     <title>{{ name }}</title>
+    {{#if_eq type "pc"}}
+    <!--[if lt IE 10]>
+        <meta http-equiv="refresh" content="0; url=./static/ie.html">
+    <![endif]-->
+    {{/if_eq}}
   </head>
   <body>
     <div id="app"></div>

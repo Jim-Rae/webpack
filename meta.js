@@ -206,6 +206,7 @@ module.exports = {
     'src/plugins/distpicker/**/*': "type === 'm'",
     'src/plugins/indicator/**/*': "type === 'm'",
     'src/plugins/toast/**/*': "type === 'm'",
+    'static/ie.html': "type === 'pc'",
   },
   complete: function(data, { chalk }) {
     const green = chalk.green

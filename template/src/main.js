@@ -11,6 +11,10 @@ import registerAllComponents from './components/register-all'
 import installAllPlugins from './plugins/install-all'
 import installAllUtils from './utils/install-all'
 
+{{#if_eq type "pc"}}
+import 'babel-polyfill'
+{{/if_eq}}
+
 {{#if_eq type "m"}}
 import 'mint-ui/lib/style.css'
 {{/if_eq}}
