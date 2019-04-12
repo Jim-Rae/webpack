@@ -7,7 +7,7 @@
 + 如果是pc端，需注释 *node_modules > lib-flexible > flexible.js* 文件的L71 ~ L73
 
 
-## 项目结构(src文件夹)
+## 项目文件结构(src文件夹)
 
 ``` bash
 src
