@@ -6,7 +6,7 @@
 
 ``` bash
 src
-|-- api                         # 接口请求api
+|-- api                         # 接口请求api
 |   |-- axios-config.js         # axios配置
 |   |-- index.js                # api方法
 |   |-- mock.js                 # 模拟数据
@@ -27,7 +27,7 @@ src
 |   |   |-- index.vue           # 页面代码
 |-- plugins                     # 插件
 |   |-- message-box             # 弹框
-|   |   |-- index.js            # js代码
+|   |   |-- index.js            # js代码
 |   |   |-- index.less          # 样式
 |   |-- install-all.js          # 用于全局安装所有的插件
 |   |-- styles.less             # 用于导入所有插件的样式
