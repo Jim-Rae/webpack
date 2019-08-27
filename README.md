@@ -2,9 +2,9 @@
 
 > 默认使用到的技术栈：vue, vue-router, vuex, axios, less, es6
 
-**由于该项目是基于vue-cli2，不支持vue-cli3，现已不再更新。
+**由于该项目是基于vue-cli2，不支持vue-cli3，现已不再更新。**
 
-**请使用基于vue-cli3的升级版模板[vue-cli3-preset-jr](https://github.com/Jim-Rae/vue-cli3-preset-jr)
+**请使用基于vue-cli3的升级版模板[vue-cli3-preset-jr](https://github.com/Jim-Rae/vue-cli3-preset-jr)**
 
 ## 项目文件结构(src文件夹)
 
